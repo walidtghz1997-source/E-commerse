@@ -1,0 +1,55 @@
+
+/* Our Story Section */
+.our-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+  padding: 90px 10%;
+  background-color: #efebe3;
+}
+
+/* Story Heading */
+.story-heading p {
+  margin-bottom: 18px;
+  color: #8c8173;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.story-heading h2 {
+  color: #25231f;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 38px;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+/* Story Content */
+.story-content p {
+  margin-bottom: 20px;
+  color: #625c53;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 700px) {
+  .our-story {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 60px 25px;
+  }
+
+  .story-heading h2 {
+    font-size: 32px;
+  }
+
+  .story-content p {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+}

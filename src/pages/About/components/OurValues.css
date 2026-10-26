@@ -1,0 +1,71 @@
+
+.our-values {
+  padding: 85px 7%;
+  background-color: #f5f2ec;
+}
+
+.values-heading {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.values-heading p {
+  margin-bottom: 15px;
+  color: #8c8173;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.values-heading h2 {
+  color: #25231f;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 38px;
+  font-weight: normal;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.value-card {
+  padding: 35px 25px;
+  border-top: 1px solid #cfc6b9;
+}
+
+.value-card span {
+  color: #8c8173;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 14px;
+}
+
+.value-card h3 {
+  margin: 22px 0 15px;
+  color: #25231f;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.value-card p {
+  color: #777168;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .our-values {
+    padding: 60px 20px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .value-card {
+    padding: 25px 10px;
+  }
+}

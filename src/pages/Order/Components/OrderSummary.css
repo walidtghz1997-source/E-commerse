@@ -1,0 +1,135 @@
+.order-summary {
+  padding: 30px;
+  background: #f8f6f1;
+  border: 1px solid #e7e2d9;
+  border-radius: 4px;
+  color: #24221e;
+}
+
+.order-summary .summary-subtitle {
+  margin: 0 0 10px;
+  color: #927a55;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+.order-summary h2 {
+  margin: 0 0 24px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.order-summary .summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e3ded5;
+  font-size: 14px;
+}
+
+.order-summary .summary-row > span:last-child,
+.order-summary .summary-row > strong:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.summary-products {
+  margin-top: 8px;
+}
+
+.summary-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e3ded5;
+}
+
+.summary-product > div {
+  min-width: 0;
+}
+
+.summary-product p {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.summary-product span {
+  color: #777168;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.summary-product > strong {
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.order-summary .summary-total {
+  margin-top: 8px;
+  padding-top: 18px;
+  border-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.order-summary .summary-total strong {
+  font-size: 20px;
+}
+
+.invoice-details {
+  margin-bottom: 22px;
+  padding: 18px;
+  border: 1px solid #e3ded5;
+  background: #fff;
+}
+
+.invoice-details p {
+  margin: 0;
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.invoice-details p + p {
+  border-top: 1px solid #f0ede7;
+}
+
+.invoice-details strong {
+  font-weight: 600;
+}
+
+.invoice-thank-you {
+  margin: 22px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid #e3ded5;
+  color: #927a55;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .order-summary {
+    padding: 20px;
+  }
+
+  .order-summary h2 {
+    font-size: 21px;
+  }
+
+  .invoice-details {
+    padding: 13px;
+  }
+}
+

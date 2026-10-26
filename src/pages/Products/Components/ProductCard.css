@@ -1,0 +1,141 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #eeeae4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(37, 35, 31, 0.08);
+}
+
+.product-card-image {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: #f7f5f1;
+}
+
+.product-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-card-image img {
+  transform: scale(1.05);
+}
+
+.product-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  padding: 22px 20px;
+}
+
+.product-card-category {
+  margin: 0 0 10px;
+  color: #9a8063;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.product-card-info h3 {
+  margin: 0 0 12px;
+  color: #292722;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.product-card-price {
+  margin: 0 0 20px;
+  color: #292722;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product-card-info button {
+  width: 100%;
+  margin-top: auto;
+  padding: 13px 15px;
+  border: 1px solid #292722;
+  background: #292722;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-card-info button:hover:not(:disabled) {
+  border-color: #9a8063;
+  background: #9a8063;
+}
+
+.product-card-info button.product-added {
+  border-color: #9a8063;
+  background: #f3f0e9;
+  color: #6f583e;
+}
+
+.product-card-info button:disabled {
+  border-color: #d8d4ce;
+  background: #e8e5df;
+  color: #827d74;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .product-card-image {
+    height: 260px;
+  }
+
+  .product-card-info {
+    padding: 18px 15px;
+  }
+
+  .product-card-info h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card-image {
+    height: 220px;
+  }
+
+  .product-card-info {
+    padding: 15px 12px;
+  }
+
+  .product-card-category {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .product-card-info h3 {
+    font-size: 15px;
+  }
+
+  .product-card-price {
+    font-size: 13px;
+  }
+
+  .product-card-info button {
+    padding: 11px 8px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}

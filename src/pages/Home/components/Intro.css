@@ -1,0 +1,41 @@
+.home-intro {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f5f2ec;
+  border-top: 1px solid #ded8ce;
+}
+
+.intro-subtitle {
+  margin-bottom: 20px;
+  color: #8c8173;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.home-intro h2 {
+  margin-bottom: 20px;
+  color: #25231f;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.intro-description {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #777168;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .home-intro {
+    padding: 55px 20px;
+  }
+
+  .home-intro h2 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,123 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e7e2d9;
+  border-radius: 4px;
+  color: #24221e;
+}
+
+.order-form h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.order-form > p {
+  margin: -8px 0 4px;
+  color: #777168;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.order-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-form .form-group label {
+  color: #37332d;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.order-form input,
+.order-form textarea,
+.order-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #dcd6cc;
+  border-radius: 2px;
+  background: #fff;
+  color: #24221e;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-form input:focus,
+.order-form textarea:focus,
+.order-form select:focus {
+  border-color: #927a55;
+  box-shadow: 0 0 0 2px rgba(146, 122, 85, 0.12);
+}
+
+.order-form input::placeholder,
+.order-form textarea::placeholder {
+  color: #a39c91;
+}
+
+.order-form textarea {
+  resize: vertical;
+  min-height: 95px;
+}
+
+.order-form input:disabled,
+.order-form select:disabled,
+.order-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.order-form-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+  padding-top: 18px;
+  border-top: 1px solid #e7e2d9;
+  font-size: 15px;
+}
+
+.order-form-total strong {
+  font-size: 19px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.order-submit {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #292720;
+  border-radius: 2px;
+  background: #292720;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.order-submit:hover:not(:disabled) {
+  background: #fff;
+  color: #292720;
+}
+
+@media (max-width: 600px) {
+  .order-form {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .order-form h2 {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,93 @@
+
+.error-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #f8f7f4;
+  text-align: center;
+}
+
+.error-content {
+  width: 100%;
+  max-width: 600px;
+}
+
+.error-brand {
+  margin-bottom: 20px;
+  color: #a17c45;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.error-content h1 {
+  margin: 0;
+  color: #1c1c1c;
+  font-size: clamp(100px, 20vw, 180px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 8px;
+}
+
+.error-content h2 {
+  margin: 25px 0 15px;
+  color: #222;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.error-message {
+  max-width: 450px;
+  margin: 0 auto 30px;
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.error-home-button {
+  display: inline-block;
+  margin: 0 8px 12px;
+  padding: 14px 28px;
+  background-color: #1c1c1c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.error-home-button:hover {
+  background-color: #a17c45;
+}
+
+.error-products-link {
+  display: inline-block;
+  margin: 0 8px 12px;
+  padding: 14px 20px;
+  border: 1px solid #1c1c1c;
+  color: #1c1c1c;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.error-products-link:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .error-content h2 {
+    font-size: 24px;
+  }
+
+  .error-home-button,
+  .error-products-link {
+    width: 100%;
+    max-width: 260px;
+    box-sizing: border-box;
+  }
+}
